@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.validation.Valid;
 
+import com.example.EmployeeApplication;
 import com.example.dao.EmployeeDAO;
 import com.example.model.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/company")
-public class EmployeeController {
+public class EmployeeController extends EmployeeApplication {
 
     @Autowired
     EmployeeDAO employeeDAO;
